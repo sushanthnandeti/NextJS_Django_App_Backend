@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #third party apps
     'ninja_extra',
-    'ninja_jwt'
+    'ninja_jwt',
+    #internal apps
+    'waitlists',
 ]
 
 MIDDLEWARE = [

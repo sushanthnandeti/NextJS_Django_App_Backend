@@ -2,3 +2,4 @@ Django
 django-ninja
 rav
 django-ninja-jwt[crypto]
+pydantic[email]
