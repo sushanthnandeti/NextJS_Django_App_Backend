@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class WaitListEnty(models.Model): 
+class WaitListEntry(models.Model): 
     # user = 
 
     email = models.EmailField()

@@ -6,6 +6,9 @@ from ninja_jwt.controller import NinjaJWTDefaultController
 
 api = NinjaExtraAPI()
 api.register_controllers(NinjaJWTDefaultController)
+api.add_router("/waitlist/", "waitlists.api.router")
+
+
 
 class UserSchema(Schema):
     username : str

@@ -9,7 +9,14 @@ class WaitListEntryCreateSchema(Schema):
     
     email : EmailStr
 
-class WaitListEntryDetailsSchema(Schema):
+class WaitListEntryListSchema(Schema):
+    # List -> Data
+    # WaitlistentryOut    
+    id    : int
+    email : EmailStr
+    
+
+class WaitListEntryDetailSchema(Schema):
     # Get -> Data
     # WaitlistentryOut    
     email : EmailStr
