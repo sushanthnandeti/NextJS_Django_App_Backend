@@ -20,4 +20,5 @@ class WaitListEntryDetailSchema(Schema):
     # Get -> Data
     # WaitlistentryOut    
     email : EmailStr
+    updated: datetime
     timestamp : datetime
