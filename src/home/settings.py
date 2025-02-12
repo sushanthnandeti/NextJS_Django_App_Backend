@@ -61,8 +61,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'home.urls'
 
-CORS_ALLOWED_ORIGINS = [
+CORS_URL_REGERX = r"^/api/.*$"
 
+CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
 ]
