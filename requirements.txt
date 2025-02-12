@@ -1,5 +1,6 @@
 Django
 django-ninja
+django-cors-headers
 rav
 django-ninja-jwt[crypto]
 pydantic[email]
