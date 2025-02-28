@@ -9,10 +9,6 @@ import helpers
 
 router = Router()
 
-def allow_annon(request):
-    if not request.user.is_authenticated:
-        return True
-
 @router.get("", response=List[WaitListEntryListSchema],auth=helpers.api_auth_user_required)
 def list_waitlist_entries(request):
     qs = WaitListEntry.objects.all()
@@ -20,7 +16,7 @@ def list_waitlist_entries(request):
 
 # api/waitlist/
 
-@router.post("", response=WaitListEntryDetailSchema, auth=[helpers.helpers.api_auth_user_or_annon])
+@router.post("", response=WaitListEntryDetailSchema, auth=[helpers.api_auth_user_or_annon])
 def create_waitlist_entry(request, data: WaitListEntryCreateSchema):
     obj = WaitListEntry(**data.dict())
     print(request.user)
